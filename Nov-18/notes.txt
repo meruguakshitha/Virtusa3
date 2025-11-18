@@ -1,0 +1,30 @@
+
+
+Map allows you to store data w.r.t. Key value pairs. 
+
+HashTable and HashMap are falling under Map interface. 
+
+Map<K,V> obj = new HashTable<K,V>();
+
+obj.put() : used to add the records. 
+
+In JDK 8 we have predefined functional interfaces available to us as
+
+(i) Consumer : This functional interface that only accepts one 
+argument, used for performing action, such as 
+printing and logging etc...
+
+(ii) Predicate : This interface represents a Boolean valued function of one arg, it is commonly used for filtering operations in streams. 
+
+Predicate<Object> obj = (value) -> condition;
+
+Function interface takes on arguments and returns a result. Its commonly used for transforeming data. 
+
+Function<Integer,Integer> obj = (value) -> code;
+
+map() : Transforms each element of stream into another object, resulting in a stream of the same size as input. Its used for one to one transformation. 
+
+flatMap() Transforms each element of stream into zero or more elements, as changing the size of the stream. Itgs used for one to many transformation.s and flattening nested structures.
+
+
+
